@@ -9,8 +9,6 @@ const Mars = ({ match }) => {
 
     
    
-
-
     const marsRoverPics = async()=>{
             const  KEY = 'edz1IInEZpnZubV09AMVZYN1746qxWQtvhMHZ72T';
             const response = await axios.get(`https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&page=2&api_key=${KEY}`);
