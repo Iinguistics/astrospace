@@ -7,7 +7,13 @@ import { KEY } from  '../nasaKey';
 
 const Home = () => {
     const [imgOfDay, setImgOfDay] = useState({})
-
+    
+    const toTop = ()=>{
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+    }
 
     useEffect(()=>{
     const imgOfDayCall = async()=>{
@@ -22,9 +28,13 @@ const Home = () => {
         );
         setImgOfDay(res.data)
     }
-    imgOfDayCall()
+    imgOfDayCall();
+
+        toTop();
     
     }, []);
+
+    
 
     const getCurrent = ()=>{
         const date = new Date();
@@ -39,7 +49,7 @@ const Home = () => {
     const renderImgOfDay = ()=>{
         if(imgOfDay){
             return (
-                <div className="flex flex-col items-center  md:flex-row">
+                <div className="flex flex-col items-center  md:flex-row mt-12">
                     <img src={imgOfDay.hdurl ? imgOfDay.hdurl : imgOfDay.url} alt={imgOfDay.title} className="my-2 w-1/2 mr-10" />
                      <div className="my-2 w-1/2">
                         <p>{imgOfDay.explanation}</p><br />
