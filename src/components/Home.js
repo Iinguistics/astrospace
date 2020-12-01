@@ -35,7 +35,6 @@ const Home = () => {
     }, []);
 
     
-    const test;
     const getCurrent = ()=>{
         const date = new Date();
         const today = date.getDate();
