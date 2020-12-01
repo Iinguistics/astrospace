@@ -22,12 +22,12 @@ const Mars = ({ match }) => {
     const marsRoverButton = ()=>{
         
             return (
-                <div className="my-3">
+                <div className="my-3 text-center">
                  <button  
                 type="submit"
                 className= "bg-black hover:bg-blue-900 text-white font-bold py-2 px-4"
                 onClick={()=> marsRoverPics()}>
-                View mars photo's
+                View mar's rover photo's
                 </button>
                 </div>
             )
@@ -65,7 +65,7 @@ const Mars = ({ match }) => {
 
 
     return (
-        <div className="container mx-auto">
+        <div className="container mx-auto h-full">
             {planet}
             {marsRoverButton()}
             {renderMarsRoverInfo()}
