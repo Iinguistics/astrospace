@@ -19222,8 +19222,12 @@ nav a:hover{
   text-decoration: none;
 }
 
-#test{
+#customNav{
   top: 0;
+}
+
+#planets a{
+  display: block;
 }
 
 @media (min-width: 640px) {

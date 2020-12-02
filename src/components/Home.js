@@ -85,7 +85,10 @@ const Home = () => {
         <div className="container m-auto my-12 flex flex-wrap flex-col items-center  md:flex-row">
            {renderImgOfDay()}
            {renderEarthSat()}
-          
+          <div className="my-10">
+              <h3>Learn about all the planets in our solar system</h3>
+              <Link to="/planets">Planet list</Link>
+          </div>
         </div>
     )
 }

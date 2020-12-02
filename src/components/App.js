@@ -7,7 +7,7 @@ import Venus from './planets/Venus';
 import Mars from './planets/Mars';
 import LandsatEarth from './LandsatEarth';
 import PlanetList from './PlanetList';
-import Footer from './Footer';
+//import Footer from './Footer';
 import '../styles/App.css';
 
 
@@ -24,7 +24,7 @@ const App = ()=>{
             <Route path="/landsat/earth" exact component={LandsatEarth} />
             <Route path="/planets" exact component={PlanetList} />
             </div>
-            <Footer />
+           
         </Router>
     )
 };

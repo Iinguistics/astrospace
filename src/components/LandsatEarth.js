@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import axios from 'axios';
 import { KEY } from '../nasaKey.js';
 import Spinner from './Helpers/Spinner';
@@ -6,8 +6,15 @@ import Spinner from './Helpers/Spinner';
 
 
 const LandsatEarth = () => {
-    const [lat, setLat] = useState(33.413102); // Phoenix
-    const [long, setLong] = useState(-111.983643);
+  useEffect(()=>{
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+}, [])
+
+    const [lat, setLat] = useState(37.351601); // San Jose
+    const [long, setLong] = useState(-121.926956);
     const [satImg, setSatImg] = useState("");
     const [loading, setLoading] = useState(false);
 
@@ -24,7 +31,7 @@ const LandsatEarth = () => {
       e.preventDefault();
       setSatImg("");
       setLoading(true);
-      const response = await axios.get(`https://api.nasa.gov/planetary/earth/imagery?lon=${long}&lat=${lat}&date=${current}&dim=0.15&api_key=${KEY}`);
+      const response = await axios.get(`https://api.nasa.gov/planetary/earth/imagery?lon=${long}&lat=${lat}&date=2018-01-01&dim=0.15&api_key=${KEY}`);
       console.log(response)
       setSatImg(response.config.url);
       setTimeout(()=>{
@@ -36,7 +43,11 @@ const LandsatEarth = () => {
  
         const renderSatImg = ()=>{
         if(satImg !== ""){
-            return <img src={satImg} alt="birds eye snapshot" className="my-2 w-3/4 md:w-1/2  m-auto"/>
+            return (
+            <div className="h-full">
+              <img src={satImg} alt="birds eye snapshot" className="my-2 w-3/4 md:w-1/2  m-auto"/>
+              </div>
+            )
         }
     }
 
@@ -49,8 +60,8 @@ const LandsatEarth = () => {
 
 
     return (
-       <div>
-         <div className="m-auto max-w-xs container">
+       <div className="h-screen">
+         <div className="m-auto max-w-xs container mt-32">
             <div className="my-12">
                 <p>Landsat imagery is provided to the public as a joint project between NASA and USGS.</p>
                 <h2>Enter in coordinates for a satellite snapshot</h2>
