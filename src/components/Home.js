@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-//import { KEY } from  '../nasaKey';
+import { KEY } from  '../nasaKey';
 
 
 const Home = () => {
@@ -21,7 +21,7 @@ const Home = () => {
             params: {
                 date: getCurrent(),
                 hd: true,
-                api_key: process.env.KEY
+                api_key: KEY
             }
         }
         );

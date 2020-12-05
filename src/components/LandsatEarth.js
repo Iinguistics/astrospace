@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios';
-//import { KEY } from '../nasaKey.js';
+import { KEY } from '../nasaKey.js';
 import Spinner from './Helpers/Spinner';
 
 
@@ -31,7 +31,7 @@ const LandsatEarth = () => {
       e.preventDefault();
       setSatImg("");
       setLoading(true);
-      const response = await axios.get(`https://api.nasa.gov/planetary/earth/imagery?lon=${long}&lat=${lat}&date=2018-01-01&dim=0.15&api_key=${process.env.KEY}`);
+      const response = await axios.get(`https://api.nasa.gov/planetary/earth/imagery?lon=${long}&lat=${lat}&date=2018-01-01&dim=0.15&api_key=${KEY}`);
       console.log(response)
       setSatImg(response.config.url);
       setTimeout(()=>{
