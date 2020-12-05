@@ -31,7 +31,7 @@ const LandsatEarth = () => {
       e.preventDefault();
       setSatImg("");
       setLoading(true);
-      const response = await axios.get(`https://api.nasa.gov/planetary/earth/imagery?lon=${long}&lat=${lat}&date=2018-01-01&dim=0.15&api_key=${KEY}`);
+      const response = await axios.get(`https://api.nasa.gov/planetary/earth/imagery?lon=${long}&lat=${lat}&date=2018-01-01&dim=0.15&api_key=${process.env.KEY}`);
       console.log(response)
       setSatImg(response.config.url);
       setTimeout(()=>{

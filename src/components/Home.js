@@ -22,7 +22,7 @@ const Home = () => {
             params: {
                 date: getCurrent(),
                 hd: true,
-                api_key: KEY
+                api_key: process.env.KEY
             }
         }
         );
