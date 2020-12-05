@@ -6,6 +6,7 @@ import Mecury from './planets/Mecury';
 import Venus from './planets/Venus';
 import Earth from './planets/Earth';
 import Mars from './planets/Mars';
+import Jupiter from './planets/Jupiter';
 import LandsatEarth from './LandsatEarth';
 import PlanetList from './PlanetList';
 //import Footer from './Footer';
@@ -23,6 +24,7 @@ const App = ()=>{
             <Route path="/planet/venus" exact component={Venus} />
             <Route path="/planet/earth" exact component={Earth} />
             <Route path="/planet/mars" exact component={Mars} />
+            <Route path="/planet/jupiter" exact component={Jupiter} />
             <Route path="/landsat/earth" exact component={LandsatEarth} />
             <Route path="/planets" exact component={PlanetList} />
             </div>
