@@ -19,11 +19,11 @@ const LandsatEarth = () => {
     const [loading, setLoading] = useState(false);
 
 
-        const date = new Date();
-        const today = date.getDate();
-        const month = date.getMonth();
-        const year = date.getFullYear();
-        const current = `${year}-${month + 1}-${today}`
+        // const date = new Date();
+        // const today = date.getDate();
+        // const month = date.getMonth();
+        // const year = date.getFullYear();
+        // const current = `${year}-${month + 1}-${today}`
 
        
     

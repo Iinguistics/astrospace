@@ -3,7 +3,6 @@ import axios from 'axios';
 
 
 const Mars = ({ match }) => {
-    const [planet, setPlanet] = useState(match.params.id);
     const [marsPhotos, setMarsPhotos] = useState([]);
     const [marsRover, setMarsRover] = useState({});
 
@@ -66,7 +65,6 @@ const Mars = ({ match }) => {
 
     return (
         <div className="container mx-auto h-full my-24">
-            {planet}
             {marsRoverButton()}
             {renderMarsRoverInfo()}
             <div className="flex flex-row flex-wrap justify-between my-2">
@@ -77,7 +75,7 @@ const Mars = ({ match }) => {
                     <h3 className="text-3xl">Mars Overveiw</h3>
                     <p>Mars was named by the ancient Romans for their god of war because its reddish color was reminiscent of blood. Other civilizations also named the planet for this attribute; for example, the Egyptians called it "Her Desher," meaning "the red one." Even today, it is frequently called the "Red Planet" because iron minerals in the Martian dirt oxidize, or rust, causing the surface to look red.</p><br />
                 </div>
-                <img src={require('../../assets/planets/Mars/mars-1.jpg')} alt="image of mars" className="my-2 w-1/2 ml-10" /> 
+                <img src={require('../../assets/planets/Mars/mars-1.jpg')} alt="mars" className="my-2 w-1/2 ml-10" /> 
              </div>
 
              <div className="m-auto text-left w-2/3">
@@ -118,7 +116,7 @@ const Mars = ({ match }) => {
                       <p>Interestingly, while Mars is about half the diameter of Earth, its surface has nearly the same area as Earth’s dry land. Its volcanoes, impact craters, crustal movement, and atmospheric conditions such as dust storms have altered the landscape of Mars over many years, creating some of the solar system's most interesting topographical features.</p><br />
                       <p>A large canyon system called Valles Marineris is long enough to stretch from California to New York—more than 3,000 miles (4,800 kilometers). This Martian canyon is 200 miles (320 kilometers) at its widest and 4.3 miles (7 kilometers) at its deepest. That's about 10 times the size of Earth's Grand Canyon.</p>
                       <div className="my-2 w-1/2 m-auto">
-                      <img src={require('../../assets/planets/Mars/mars-2.jpg')} alt="venus" /> 
+                      <img src={require('../../assets/planets/Mars/mars-2.jpg')} alt="mars" /> 
                       </div>
                       </div>
                 </div>
