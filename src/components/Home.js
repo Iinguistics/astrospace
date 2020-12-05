@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import PlanetList from './PlanetList';
-//import axios from 'axios';
-import { KEY } from  '../nasaKey';
+import axios from 'axios';
+//import { KEY } from  '../nasaKey';
 
 
 const Home = () => {
