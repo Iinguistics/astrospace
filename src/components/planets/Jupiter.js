@@ -12,7 +12,7 @@ const Jupiter = () => {
                     <p>Jupiter is the fifth planet from our Sun and is, by far, the largest planet in the solar system – more than twice as massive as all the other planets combined. Jupiter's stripes and swirls are actually cold, windy clouds of ammonia and water, floating in an atmosphere of hydrogen and helium. Jupiter’s iconic Great Red Spot is a giant storm bigger than Earth that has raged for hundreds of years.</p><br />
                     <p>Jupiter is surrounded by dozens of moons. Jupiter also has several rings, but unlike the famous rings of Saturn, Jupiter’s rings are very faint and made of dust, not ice.</p>
                 </div>
-                <img src={require('../../assets/planets/Jupiter/jupiter-1.jpg')} alt="jupiter" className="my-2 w-1/2 ml-10" /> 
+                <img src={require('../../assets/planets/Jupiter/jupiter-1.jpg')} alt="jupiter" className="my-2 w-2/3 lg:w-1/2 ml-10" /> 
              </div>
 
              <div className="m-auto text-left w-2/3">
@@ -51,7 +51,7 @@ const Jupiter = () => {
                       <h3 className="text-3xl mb-5">Surface</h3>
                       <div className="mb-10">
                       <p>As a gas giant, Jupiter doesn’t have a true surface. The planet is mostly swirling gases and liquids. While a spacecraft would have nowhere to land on Jupiter, it wouldn’t be able to fly through unscathed either. The extreme pressures and temperatures deep inside the planet crush, melt and vaporize spacecraft trying to fly into the planet.</p><br />
-                      <div className="my-2 w-1/2 m-auto">
+                      <div className="my-2 w-2/3 lg:w-1/2 m-auto">
                       <img src={require('../../assets/planets/Jupiter/jupiter-2.jpg')} alt="jupiter's gas" /> 
                         </div>
                       </div>

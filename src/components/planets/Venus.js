@@ -11,7 +11,7 @@ const Venus = () => {
                     <p>Venus is the second planet from the Sun and our closest planetary neighbor. Similar in structure and size to Earth, Venus spins slowly in the opposite direction from most planets. Its thick atmosphere traps heat in a runaway greenhouse effect, making it the hottest planet in our solar system with surface temperatures hot enough to melt lead. Glimpses below the clouds reveal volcanoes and deformed mountains.</p>
                     <p>Venus is named for the ancient Roman goddess of love and beauty, who was known as Aphrodite to the Ancient Greeks.</p><br />
                 </div>
-                <img src={require('../../assets/planets/Venus/venus-1.jpg')} alt="venus" className="my-2 w-1/2 ml-10" /> 
+                <img src={require('../../assets/planets/Venus/venus-1.jpg')} alt="venus" className="my-2 w-2/3 lg:w-1/2 ml-10" /> 
              </div>
                 
                 <div className="m-auto text-left w-2/3 mb-10">
@@ -20,7 +20,7 @@ const Venus = () => {
                       <p>With a radius of 3,760 miles (6,052 kilometers), Venus is roughly the same size as Earth — just slightly smaller.</p>
                       <p>From an average distance of 67 million miles (108 million kilometers), Venus is 0.7 astronomical units away from the Sun. One astronomical unit (abbreviated as AU), is the distance from the Sun to Earth. It takes sunlight 6 minutes to travel from the Sun to Venus.</p>
                       </div>
-                      <div className="my-2 w-1/2 m-auto">
+                      <div className="my-2 w-2/3 lg:w-1/2 m-auto">
                       <img src={require('../../assets/planets/Venus/venus-2.jpg')} alt="venus" /> 
                       </div>
                 </div>
@@ -54,7 +54,7 @@ const Venus = () => {
                       <p>From space, Venus is bright white because it is covered with clouds that reflect and scatter sunlight. At the surface, the rocks are different shades of grey, like rocks on Earth, but the thick atmosphere filters the sunlight so that everything would look orange if you were standing on Venus.</p><br />
                       <p>Venus has mountains, valleys, and tens of thousands of volcanoes. The highest mountain on Venus, Maxwell Montes, is 20,000 feet high (8.8 kilometers), similar to the highest mountain on Earth, Mount Everest. The landscape is dusty, and surface temperatures reach a scalding 880 degrees Fahrenheit (471 degrees Celsius).</p> <br />
                       <p>It is thought that Venus was completely resurfaced by volcanic activity 300 to 500 million years ago. Venus has two large highland areas: Ishtar Terra, about the size of Australia, in the north polar region; and Aphrodite Terra, about the size of South America, straddling the equator and extending for almost 6,000 miles (10,000 kilometers).</p><br />
-                      <div className="my-2 w-1/2 m-auto">
+                      <div className="my-2 w-2/3 lg:w-1/2 m-auto">
                       <img src={require('../../assets/planets/Venus/venus-surface.jpg')} alt="venus" /> 
                       </div>
                       <p>Venus is covered in craters, but none are smaller than 0.9 to 1.2 miles (1.5 to 2 kilometers) across. Small meteoroids burn up in the dense atmosphere, so only large meteoroids reach the surface and create impact craters.</p>

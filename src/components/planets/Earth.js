@@ -11,7 +11,7 @@ const Earth = () => {
                     <p>Our home planet is the third planet from the Sun, and the only place we know of so far that’s inhabited by living things. While Earth is only the fifth largest planet in the solar system, it is the only world in our solar system with liquid water on the surface. Just slightly larger than nearby Venus, Earth is the biggest of the four planets closest to the Sun, all of which are made of rock and metal.</p><br />
                     <p>The name Earth is at least 1,000 years old. All of the planets, except for Earth, were named after Greek and Roman gods and goddesses. However, the name Earth is a Germanic word, which simply means “the ground.”</p>
                 </div>
-                <img src={require('../../assets/planets/Earth/earth-1.jpg')} alt="earth" className="my-2 w-1/2 ml-10" /> 
+                <img src={require('../../assets/planets/Earth/earth-1.jpg')} alt="earth" className="my-2 w-2/3 lg:w-1/2 ml-10" /> 
              </div>
 
              <div className="m-auto text-left w-2/3">
@@ -52,7 +52,7 @@ const Earth = () => {
                       <div className="mb-10">
                       <p>Like Mars and Venus, Earth has volcanoes, mountains and valleys. Earth's lithosphere, which includes the crust (both continental and oceanic) and the upper mantle, is divided into huge plates that are constantly moving. For example, the North American plate moves west over the Pacific Ocean basin, roughly at a rate equal to the growth of our fingernails. Earthquakes result when plates grind past one another, ride up over one another, collide to make mountains, or split and separate.</p><br />
                       <p>Earth's global ocean, which covers nearly 70 percent of the planet's surface, has an average depth of about 2.5 miles (4 kilometers) and contains 97 percent of Earth's water. Almost all of Earth's volcanoes are hidden under these oceans. Hawaii's Mauna Kea volcano is taller from base to summit than Mount Everest, but most of it is underwater. Earth's longest mountain range is also underwater, at the bottom of the Arctic and Atlantic oceans. It is four times longer than the Andes, Rockies and Himalayas combined.</p> <br />
-                      <div className="my-2 w-1/2 m-auto">
+                      <div className="my-2 w-2/3 lg:w-1/2 m-auto">
                       <img src={require('../../assets/planets/Earth/earth-2.jpg')} alt="earth" /> 
                       </div>
                       <p>Near the surface, Earth has an atmosphere that consists of 78 percent nitrogen, 21 percent oxygen, and 1 percent other gases such as argon, carbon dioxide and neon. The atmosphere affects Earth's long-term climate and short-term local weather and shields us from much of the harmful radiation coming from the Sun. It also protects us from meteoroids, most of which burn up in the atmosphere, seen as meteors in the night sky, before they can strike the surface as meteorites.</p>
