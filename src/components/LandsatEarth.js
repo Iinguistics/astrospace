@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios';
 import { KEY } from '../nasaKey.js';
 import Spinner from './Helpers/Spinner';
+import GoBackButton from './Helpers/GoBackButton.js';
 
 
 
@@ -61,7 +62,8 @@ const LandsatEarth = () => {
 
     return (
        <div className="h-screen">
-         <div className="m-auto max-w-xs container mt-32">
+         <GoBackButton />
+         <div className="m-auto max-w-xs container mt-28 xl:mt-32">
             <div className="my-12">
                 <p>Landsat imagery is provided to the public as a joint project between NASA and USGS.</p>
                 <h2>Enter in coordinates for a satellite snapshot</h2>
