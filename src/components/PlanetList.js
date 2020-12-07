@@ -18,7 +18,7 @@ const PlanetList = () => {
          <GoBackButton />
           <div className="text-center  my-32" id="planets">
             <h2 className="text-2xl mb-5">View details of each planet:</h2>
-           <Link className="text-lg" to="/planet/mecury">Mecury</Link>
+           <Link className="text-lg" to="/planet/mercury">Mercury</Link>
            <Link className="text-lg" to="/planet/venus">Venus</Link>
            <Link className="text-lg" to="/planet/earth">Earth</Link>
            <Link className="text-lg" to="/planet/mars">Mars</Link>

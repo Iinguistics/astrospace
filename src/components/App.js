@@ -20,7 +20,7 @@ const App = ()=>{
             <Header />
             <div className="container m-auto">
             <Route path="/" exact component={Home} />
-            <Route path="/planet/mecury" exact component={Mercury} />
+            <Route path="/planet/mercury" exact component={Mercury} />
             <Route path="/planet/venus" exact component={Venus} />
             <Route path="/planet/earth" exact component={Earth} />
             <Route path="/planet/mars" exact component={Mars} />
