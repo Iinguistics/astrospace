@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Header from './Header';
 import Home from './Home';
-import Mecury from './planets/Mecury';
+import Mercury from './planets/Mercury';
 import Venus from './planets/Venus';
 import Earth from './planets/Earth';
 import Mars from './planets/Mars';
@@ -20,7 +20,7 @@ const App = ()=>{
             <Header />
             <div className="container m-auto">
             <Route path="/" exact component={Home} />
-            <Route path="/planet/mecury" exact component={Mecury} />
+            <Route path="/planet/mecury" exact component={Mercury} />
             <Route path="/planet/venus" exact component={Venus} />
             <Route path="/planet/earth" exact component={Earth} />
             <Route path="/planet/mars" exact component={Mars} />

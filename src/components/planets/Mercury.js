@@ -2,15 +2,15 @@ import React, { Fragment } from 'react'
 
 
 
-const Mecury = () => {
+const Mercury = () => {
     return (
          <Fragment>
              <div className="flex flex-col items-center md:flex-row my-24">
              <div className="my-2 w-1/2">
-                    <h3 className="text-3xl">Mecury Overveiw</h3>
+                    <h3 className="text-3xl">Mercury Overveiw</h3>
                     <p>The smallest planet in our solar system and nearest to the Sun, Mercury is only slightly larger than Earth's Moon.From the surface of Mercury, the Sun would appear more than three times as large as it does when viewed from Earth, and the sunlight would be as much as seven times brighter. Despite its proximity to the Sun, Mercury is not the hottest planet in our solar system, that title belongs to nearby Venus, thanks to its dense atmosphere.</p><br />
                 </div>
-                <img src={require('../../assets/planets/Mecury/Mecury-1.jpg')} alt="satellite imgage of Houston Tx" className="my-2 w-2/3 lg:w-1/2 ml-10" /> 
+                <img src={require('../../assets/planets/Mercury/mercury-1.jpg')} alt="Mercury" className="my-2 w-2/3 lg:w-1/2 ml-10" /> 
              </div>
 
              <div className="m-auto text-left w-2/3">
@@ -49,7 +49,7 @@ const Mecury = () => {
                       <div className="mb-10">
                       <p>Mercury's surface resembles that of Earth's moon, scarred by many impact craters resulting from collisions with meteoroids and comets. Craters and features on Mercury are named after famous deceased artists, musicians or authors, including children's author Dr. Seuss and dance pioneer Alvin Ailey.</p><br />
                       <div className="my-2 w-2/3 lg:w-1/2 m-auto">
-                      <img src={require('../../assets/planets/Mecury/Mecury-2.jpg')} alt="mecury" /> 
+                      <img src={require('../../assets/planets/Mercury/mercury-2.jpg')} alt="mercury" /> 
                         </div>
                         <p>Very large impact basins, including Caloris (960 miles or 1,550 kilometers in diameter) and Rachmaninoff (190 miles, or 306 kilometers in diameter), were created by asteroid impacts on the planet's surface early in the solar system's history. While there are large areas of smooth terrain, there are also cliffs, some hundreds of miles long and soaring up to a mile high. They rose as the planet's interior cooled and contracted over the billions of years since Mercury formed.</p><br />
                         <p>Most of Mercury's surface would appear greyish-brown to the human eye. The bright streaks are called "crater rays." They are formed when an asteroid or comet strikes the surface. The tremendous amount of energy that is released in such an impact digs a big hole in the ground, and also crushes a huge amount of rock under the point of impact. Some of this crushed material is thrown far from the crater and then falls to the surface, forming the rays. Fine particles of crushed rock are more reflective than large pieces, so the rays look brighter. The space environment—dust impacts and solar-wind particles—causes the rays to darken with time.</p><br />
@@ -91,4 +91,4 @@ const Mecury = () => {
     )
 }
 
-export default Mecury
+export default Mercury
