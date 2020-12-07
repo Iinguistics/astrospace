@@ -23,6 +23,7 @@ const PlanetList = () => {
            <Link className="text-lg" to="/planet/earth">Earth</Link>
            <Link className="text-lg" to="/planet/mars">Mars</Link>
            <Link className="text-lg" to="/planet/jupiter">Jupiter</Link>
+           <Link className="text-lg" to="/planet/saturn">Saturn</Link>
           </div>
         </Fragment>
        
