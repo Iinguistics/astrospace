@@ -1,5 +1,6 @@
 import React, { useState, Fragment } from 'react';
 import axios from 'axios';
+import GoBackButton from '../Helpers/GoBackButton';
 
 
 const Mars = ({ match }) => {
@@ -64,6 +65,8 @@ const Mars = ({ match }) => {
 
 
     return (
+        <Fragment>
+            <GoBackButton />
         <div className="container mx-auto h-full my-24">
             {marsRoverButton()}
             {renderMarsRoverInfo()}
@@ -137,6 +140,7 @@ const Mars = ({ match }) => {
                       </div>
                 </div>
         </div>
+        </Fragment>
     )
 }
 
