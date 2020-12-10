@@ -25,6 +25,7 @@ const PlanetList = () => {
            <Link className="text-lg" to="/planet/jupiter">Jupiter</Link>
            <Link className="text-lg" to="/planet/saturn">Saturn</Link>
            <Link className="text-lg" to="/planet/uranus">Uranus</Link>
+           <Link className="text-lg" to="/planet/neptune">Neptune</Link>
           </div>
         </Fragment>
        
